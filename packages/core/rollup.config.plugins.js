@@ -4,12 +4,12 @@ const banner =
   "/*! Capacitor-Community: https://github.com/capacitor-community - MIT License */";
 
 export default {
-  input: "build/index.js",
+  input: "dist/esm-plugins/index.js",
   output: {
-    file: "dist/cap-scripts.js",
-    format: "cjs",
+    file: "dist/electron-bridge.js",
+    format: "iife",
     name: "capacitorExports",
-    sourcemap: true,
+    sourcemap: false,
     banner,
   },
   plugins: [nodeResolve()],
