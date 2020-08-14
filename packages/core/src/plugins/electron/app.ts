@@ -36,9 +36,6 @@ export class AppPluginElectron extends WebPlugin implements AppPlugin {
     });
   }
 
-  getAppPath(): string {
-    return remote.app.getAppPath();
-  }
   exitApp(): never {
     let w = remote.getCurrentWindow();
     w && w.close();
